@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Duka Digital Njenga</title>
+<meta name="description" content="Free, simple digital tools for small businesses in Mukuru kwa Njenga.">
+<style>
+:root{--bg:#F3F8F5;--ink:#12332B;--mute:#44615A;--card:#FFFFFF;--line:#CFE0D7;--green:#0B6E4F;--gtext:#0B6E4F;--amber:#F4A300;--onamber:#12332B;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0E1F1A;--ink:#E6F1EC;--mute:#A9C2B8;--card:#16302A;--line:#2A4A41;--green:#1E8F69;--gtext:#5FD3A5}}
+:root[data-theme="dark"]{--bg:#0E1F1A;--ink:#E6F1EC;--mute:#A9C2B8;--card:#16302A;--line:#2A4A41;--green:#1E8F69;--gtext:#5FD3A5}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 "Gill Sans","Trebuchet MS",Verdana,sans-serif}
+h1,h2,h3{font-family:"Arial Black","Helvetica Neue",Arial,sans-serif;line-height:1.1;margin:0 0 .5em;letter-spacing:-.01em}
+h2{font-size:clamp(1.6rem,4vw,2.2rem)}
+h3{font-size:1.1rem}
+p{margin:0 0 1em;max-width:62ch}
+a{color:var(--gtext)}
+:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+section{padding:56px 0}
+.sign{background:var(--green);color:#fff;padding:36px 0 0}
+.sign h1{font-size:clamp(2.4rem,9vw,5rem);margin:0 0 .25em;color:#fff}
+.sign p{color:#E3F3EC;font-size:1.15rem}
+.tag{display:inline-block;background:var(--amber);color:var(--onamber);font-weight:700;padding:6px 14px;border-radius:4px;transform:rotate(-1.5deg);margin-bottom:22px}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin:8px 0 40px}
+.btn{display:inline-block;padding:13px 22px;border-radius:6px;font-weight:700;text-decoration:none;border:2px solid #fff;color:#fff;background:transparent;font:inherit;font-weight:700;cursor:pointer}
+.btn.main{background:var(--amber);border-color:var(--amber);color:var(--onamber)}
+.btn[aria-disabled="true"]{opacity:.7;cursor:not-allowed}
+.awning{height:28px;background:radial-gradient(circle at 22px 0,var(--amber) 21px,transparent 22px) 0 0/44px 28px repeat-x}
+.check{display:grid;gap:10px;margin:20px 0;padding:0;list-style:none}
+.check label{display:flex;gap:12px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 14px;cursor:pointer}
+.check input{width:22px;height:22px;accent-color:var(--green);flex:none}
+.shelf{display:flex;gap:8px;margin:18px 0 8px}
+.shelf span{flex:1;height:14px;border-radius:3px;background:var(--line);transition:background .25s}
+.shelf span.on{background:var(--amber)}
+.result{font-weight:700;font-size:1.15rem;min-height:3.4em}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:20px}
+.card .ic{font-size:1.8rem;display:block;margin-bottom:8px}
+.steps{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));counter-reset:s;padding:0;list-style:none}
+.steps li{counter-increment:s;background:var(--card);border-left:6px solid var(--amber);border-radius:6px;padding:18px 18px 18px 20px}
+.steps li::before{content:"Workshop " counter(s);display:block;color:var(--gtext);font-weight:700;margin-bottom:4px}
+.safe{background:var(--green);color:#fff}
+.safe h2,.safe h3{color:#fff}.safe p{color:#E3F3EC}
+.safe .card{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.3)}
+.goals{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+.goal b{display:block;font:900 2.4rem/1 "Arial Black",Arial,sans-serif;color:var(--gtext)}
+.team{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(180px,1fr))}
+.team div{border-top:4px solid var(--green);background:var(--card);padding:14px;border-radius:0 0 8px 8px}
+.team small{color:var(--mute)}
+footer{background:var(--ink);color:var(--bg);padding:32px 0;font-size:.95rem}
+footer p{max-width:none;margin:.3em 0}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.shelf span{transition:none}}
+</style>
+</head>
+<body>
+<header class="sign">
+  <div class="wrap">
+    <span class="tag">Free for small businesses in Mukuru kwa Njenga</span>
+    <h1>Duka Digital Njenga</h1>
+    <p>Small shop. Smart tools. Bigger sales.<br>Your phone can do much more than send M-Pesa. We help you keep records, get paid safely and be found by new customers.</p>
+    <div class="btns">
+      <a class="btn main" href="#check">Check your duka</a>
+      <a class="btn" href="#join">Join the pilot</a>
+    </div>
+  </div>
+  <div class="awning" aria-hidden="true"></div>
+</header>
+
+<main>
+<section id="check">
+  <div class="wrap">
+    <h2>How digital is your duka?</h2>
+    <p>Tick what your business already does. The shelf fills as you go.</p>
+    <ul class="check" id="list">
+      <li><label><input type="checkbox"> I write down daily sales and stock</label></li>
+      <li><label><input type="checkbox"> Customers can pay to a Till or Pochi la Biashara</label></li>
+      <li><label><input type="checkbox"> I use WhatsApp Business with a product catalogue</label></li>
+      <li><label><input type="checkbox"> My shop shows on Google Maps</label></li>
+      <li><label><input type="checkbox"> I know how to spot a fake M-Pesa message</label></li>
+    </ul>
+    <div class="shelf" id="shelf" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+    <p class="result" id="result" role="status" aria-live="polite">Tick the boxes to see your score.</p>
+  </div>
+</section>
+
+<section id="tools" style="background:var(--card)">
+  <div class="wrap">
+    <h2>Five tools, all on the phone you already have</h2>
+    <div class="grid">
+      <div class="card"><span class="ic" aria-hidden="true">💳</span><h3>Till and Pochi</h3><p>Take payments with a business number. Keep business money apart from personal money.</p></div>
+      <div class="card"><span class="ic" aria-hidden="true">💬</span><h3>WhatsApp Business</h3><p>Show your products and prices in a catalogue. Reply fast with saved messages.</p></div>
+      <div class="card"><span class="ic" aria-hidden="true">📍</span><h3>Google Maps</h3><p>Add your shop name, place and opening hours so new customers can find you.</p></div>
+      <div class="card"><span class="ic" aria-hidden="true">📒</span><h3>Sales and stock record</h3><p>Write daily sales, stock and costs. Know your profit and what to restock.</p></div>
+      <div class="card"><span class="ic" aria-hidden="true">🛡️</span><h3>Online safety</h3><p>Protect your PIN, your accounts and your money from fraud.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="workshops">
+  <div class="wrap">
+    <h2>Three short workshops, about two hours each</h2>
+    <ol class="steps">
+      <li><h3>Payments and records</h3><p>Set up a Till or Pochi and read your M-Pesa statement. Planned for 11 to 16 January 2027.</p></li>
+      <li><h3>Get found</h3><p>Build your WhatsApp catalogue and Google Maps listing. Planned for 25 to 30 January 2027.</p></li>
+      <li><h3>Stock and sales</h3><p>Keep a simple sheet on your phone and read your profit. Planned for 8 to 13 February 2027.</p></li>
+    </ol>
+    <p>We visit your shop afterwards to see what is working. Dates may change, so join to get updates.</p>
+  </div>
+</section>
+
+<section id="safety" class="safe">
+  <div class="wrap">
+    <h2>Stay safe from fraud</h2>
+    <div class="grid">
+      <div class="card"><h3>Never share your PIN</h3><p>No one from M-Pesa or a bank needs your PIN. Not on a call, not by message.</p></div>
+      <div class="card"><h3>Check before you hand over goods</h3><p>Open the real M-Pesa message and check the amount and the name. Fake messages look very similar.</p></div>
+      <div class="card"><h3>Be slow with urgent messages</h3><p>Scammers rush you. Stop, call the official number and ask someone you trust.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="goals">
+  <div class="wrap">
+    <h2>What we want to achieve</h2>
+    <div class="goals">
+      <div class="goal"><b>20</b>shops in the pilot</div>
+      <div class="goal"><b>75%</b>of shops using 2 or more new tools after 8 weeks</div>
+      <div class="goal"><b>10</b>shops showing a Till or QR code at the counter</div>
+      <div class="goal"><b>80%</b>of traders happy with the training</div>
+    </div>
+    <p style="margin-top:20px">Estimated pilot cost: KES 16,060, about KES 803 per shop.</p>
+  </div>
+</section>
+
+<section id="team" style="background:var(--card)">
+  <div class="wrap">
+    <h2>The team</h2>
+    <p>Five students from the AmericaShare Micato Digital Literacy Programme, Class of 2026.</p>
+    <div class="team">
+      <div><b>Bahati J</b><br><small>Group leader</small></div>
+      <div><b>Naomi</b><br><small>Deputy leader</small></div>
+      <div><b>Name to add</b><br><small>Data and budget</small></div>
+      <div><b>Name to add</b><br><small>Design</small></div>
+      <div><b>Name to add</b><br><small>Communications</small></div>
+    </div>
+  </div>
+</section>
+
+<section id="join">
+  <div class="wrap">
+    <h2>Join the pilot</h2>
+    <p>Tell us about your business in a 3-minute survey. No names or phone numbers needed. Your answers help us plan the workshops.</p>
+    <div class="btns" style="margin-bottom:0">
+      <a class="btn main" id="survey" href="#join" aria-disabled="true" style="color:var(--onamber)">Survey link coming soon</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><b>Duka Digital Njenga</b> &ndash; Small shop. Smart tools. Bigger sales.</p>
+    <p>AmericaShare Micato Digital Literacy Programme, Capstone 2026. #DukaDigitalNjenga</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var SURVEY_URL=""; /* paste your Google Form link between the quotes */
+  var s=document.getElementById("survey");
+  if(SURVEY_URL){s.href=SURVEY_URL;s.target="_blank";s.rel="noopener";s.removeAttribute("aria-disabled");s.textContent="Take the survey";}
+  else{s.addEventListener("click",function(e){e.preventDefault();});}
+  var boxes=document.querySelectorAll("#list input"),bars=document.querySelectorAll("#shelf span"),out=document.getElementById("result");
+  var msg=["Tick the boxes to see your score.",
+   "1 of 5. Good start. Begin with a simple notebook for sales and stock.",
+   "2 of 5. You are on your way. Add a Till or Pochi next.",
+   "3 of 5. Well done. Getting found on Google Maps is a quick win.",
+   "4 of 5. Almost there. Join a workshop to finish the last step.",
+   "5 of 5. Your duka is digital. Help a neighbour get started."];
+  function upd(){var n=0;boxes.forEach(function(b){if(b.checked)n++;});
+    bars.forEach(function(el,i){el.classList.toggle("on",i<n);});
+    out.textContent=msg[n];}
+  boxes.forEach(function(b){b.addEventListener("change",upd);});
+})();
+</script>
+</body>
+</html>
